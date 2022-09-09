@@ -19,7 +19,7 @@ namespace calculadora
         string operacao = "";
         bool bool1 = false;
         bool porcent = false;
-        bool elevado = false;
+        bool maisMenos = false;
 
         private void btn0_Click(object sender, EventArgs e)
         {
@@ -206,6 +206,19 @@ namespace calculadora
             txbResult.Text = Convert.ToString( 1 / valor1);
             lblOperacao.Text =  " 1 / (" + valor1 + ")";
         }
+
+        private void txbResult_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMaisMenos_Click(object sender, EventArgs e)
+        {
+            var numeroInvertido1 = Convert.ToDecimal(txbResult.Text);
+            numeroInvertido1 = numeroInvertido1 * -1;
+            txbResult.Text = numeroInvertido1.ToString();
+        }
+
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {

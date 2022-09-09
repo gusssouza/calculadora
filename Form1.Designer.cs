@@ -335,7 +335,6 @@
             // btnMaisMenos
             // 
             this.btnMaisMenos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMaisMenos.Enabled = false;
             this.btnMaisMenos.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMaisMenos.Location = new System.Drawing.Point(255, 371);
             this.btnMaisMenos.Name = "btnMaisMenos";
@@ -343,6 +342,7 @@
             this.btnMaisMenos.TabIndex = 47;
             this.btnMaisMenos.Text = "+/-";
             this.btnMaisMenos.UseVisualStyleBackColor = false;
+            this.btnMaisMenos.Click += new System.EventHandler(this.btnMaisMenos_Click);
             // 
             // txbResult
             // 
@@ -351,6 +351,7 @@
             this.txbResult.Name = "txbResult";
             this.txbResult.Size = new System.Drawing.Size(282, 51);
             this.txbResult.TabIndex = 48;
+            this.txbResult.TextChanged += new System.EventHandler(this.txbResult_TextChanged);
             // 
             // lblOperacao
             // 
