@@ -19,7 +19,6 @@ namespace calculadora
         string operacao = "";
         bool bool1 = false;
         bool porcent = false;
-        bool maisMenos = false;
 
         private void btn0_Click(object sender, EventArgs e)
         {
